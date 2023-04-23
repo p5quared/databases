@@ -4,7 +4,7 @@ This exercise will introduce you to using SQLite, a lightweight and popular rela
 
 ## Introduction to Databases
 
-A database is a structured collection of data that is organized and stored in a way that makes it easy to access, manage, and retrieve information. Databases are widely used in modern software applications for storing and managing data, such as user information, product details, or financial records.
+A database is a structured collection of data that is organized and stored in a way that makes it easy to access, manage, and retrieve information. Databases are widely used in modern software applications for storing and managing data, such as user information, product details, or financial records. It is easy to overcomplicate the idea of a database, but at its core, every database is essentially just an interface to read and write data to text files (oversimplification, but conceptually I think this is accurate).
 
 There are several types of databases, including relational, hierarchical, and NoSQL databases. In this exercise, we will focus on relational databases, which organize data in tables with rows and columns, and use SQL (Structured Query Language) for managing data.
 
@@ -15,6 +15,10 @@ SQLite is a self-contained, serverless, and zero-configuration relational databa
 SQLite uses SQL for creating, modifying, and retrieving data from databases. SQL is a domain-specific language used for managing relational databases, and it provides a set of commands, or queries, for performing operations such as creating tables, inserting data, updating data, and retrieving data from tables.
 
 SQLite is also convenient because it comes installed pre-installed on most Linux and macOS systems, and it is available as a single C source code file that can be easily embedded in other applications. SQLite is also available as a standalone command-line tool for managing databases. You can jump right into SQLite in most languages including Python, Ruby, and C/C++, without having to install any additional libraries.
+
+## SQLITE vs MYSQL
+
+You've probably heard of other MYSQL or even PostgreSQL. SQLite is not 'inferior' to these options, but it is definitely simpler to get up and running. The main difference is that most databases operate as a server, where you connect, read/write, and disconnect, wheras SQLite is just a raw file that you open/close. While PostgreSQL is probably the most popular SQL database for production, SQLite is still very relevant and useful for its simplicity. SQLite lives everywhere, in browsers, phones, and is considered to by many to be the industry standard for embedded databases.
 
 ### Queries, Cursors, and Results
 To extract, add or modify data in a database, you need to use SQL queries. A query is a statement that you use to interact with the database. 
